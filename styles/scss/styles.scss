@@ -7,7 +7,7 @@
   
    body {
      font-family: "Jost", sans-serif;
-     background: #d9d9d9;
+     background: $background;
    }
    
    .producto__contenedor{
@@ -86,7 +86,7 @@
       display: flex;
       align-items: center;
       text-align: center;
-      color: #252422;
+      color: $bzrs-black;
     }
    }
    
@@ -142,8 +142,8 @@
       margin-top: 5px ;
     }
     .producto__boton {
-      background: #252422;
-      border: 2px solid #1e1e1e;
+      background: $bzrs-black;
+      border: 2px solid $bzrs-black;
       border-radius: 25px;
       width: 150px;
       height: 60px;
@@ -151,27 +151,15 @@
       font-style: normal;
       font-weight: 600;
       font-size: 32px;
-      color: #d9d9d9;
+      color: $background;
       text-align: center;
       margin-top: 15px;
       &:hover{
-        background: #d9d9d9;
-        color: #252422;
+        background: $background;
+        color: $bzrs-black;
       }
     }
    }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
    
    
    .footer{
@@ -228,16 +216,16 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     background: #d9d9d9;
-     border: 2px solid #1e1e1e;
+     background: $background;
+     border: 2px solid $bzrs-black;
      border-radius: 20px;  
    }
    
    
    .botonEnviar{
      text-align: center;
-     background: #252422;
-     border: 2px solid #1e1e1e;
+     background: $bzrs-black;
+     border: 2px solid $bzrs-black;
      border-radius: 25px;
      font-family: "Jost";
      font-style: normal;
@@ -278,8 +266,8 @@
    
    
    .botonEnviar:hover{
-     background: #d9d9d9;
-     color: #252422;
+     background: $background;
+     color: $bzrs-black;
    }
    
    .h1contact{
@@ -292,7 +280,7 @@
      width: 80%;
      height: 650px;
      background-color: white;
-     border:2px solid #1e1e1e;
+     border:2px solid $bzrs-black;
      border-radius: 20px;
      margin-top: 20px;
      margin-bottom: 20px;
@@ -304,7 +292,7 @@
      height: 97%;
      border-radius: 20px;
      margin: 10px;
-     border: 2px solid #1e1e1e;
+     border: 2px solid $bzrs-black;
    }
    
    .cProducto__informacion{
@@ -314,7 +302,7 @@
      border-radius: 20px;
      margin: 10px;
      padding: 20px;
-     border: 2px solid #1e1e1e;
+     border: 2px solid $bzrs-black;
    }
    
    .informacion__producto{
