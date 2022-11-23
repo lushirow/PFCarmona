@@ -40,17 +40,27 @@
     </nav>
   </header>
   <main>
-    <span class="contenedorContact">
-        <section class="formContact">
-          <h1 class="h1contact">Contactanos</h1>
-          <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" class="input">
-          <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" class="input">
-          <input type="text" id="correo" name="correo" placeholder="correo@correo.com" class="input">
-          <h2 class="h1contact">Mensaje</h2>
-          <textarea name="comentario" class="textArea" placeholder="Escribe tu mensaje aqui"></textarea>
-          <a href="" class="botonEnviar">Enviar</a>
-        </section>
-    </span>
+    <div class="container cont ">
+      <h1>CONTACTANOS</h1>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Nombre</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Apellido</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Correo</label>
+      </div>
+      <h2>MENSAJE</h2>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Comments</label>
+      </div>
+        <a href=""><button class="botonEnviar">Enviar</button></a>
+    </div>    
   </main>
   <div class="container-fluid footer">
     <footer class="py-3 my-4">

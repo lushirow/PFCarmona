@@ -112,12 +112,10 @@ ul li a {
 }
 
 .producto {
-  margin: 64px;
   width: 300px;
   height: 513px;
 }
-
-.producto__imagen {
+.producto .producto__imagen {
   width: 300px;
   height: 300px;
   border-radius: 8px;
@@ -125,8 +123,7 @@ ul li a {
   margin: 0;
   margin-top: 20px;
 }
-
-.producto__nombre {
+.producto .producto__nombre {
   font-family: "Kelly Slab", cursive;
   font-style: normal;
   font-size: 32px;
@@ -134,8 +131,7 @@ ul li a {
   padding: 0;
   text-align: center;
 }
-
-.producto__nombreDesc {
+.producto .producto__nombreDesc {
   font-family: "Kelly Slab", cursive;
   font-style: normal;
   font-size: 32px;
@@ -144,8 +140,7 @@ ul li a {
   text-align: center;
   color: darkgreen;
 }
-
-.producto__precio {
+.producto .producto__precio {
   font-family: "Kelly Slab", cursive;
   font-style: normal;
   font-weight: 400;
@@ -154,8 +149,7 @@ ul li a {
   margin: 0;
   margin-top: 5px;
 }
-
-.producto__precioDesc {
+.producto .producto__precioDesc {
   font-family: "Kelly Slab", cursive;
   font-style: normal;
   font-weight: 400;
@@ -165,8 +159,7 @@ ul li a {
   margin: 0;
   margin-top: 5px;
 }
-
-.producto__boton {
+.producto .producto__boton {
   background: #252422;
   border: 2px solid #1e1e1e;
   border-radius: 25px;
@@ -180,7 +173,7 @@ ul li a {
   text-align: center;
   margin-top: 15px;
 }
-.producto__boton:hover {
+.producto .producto__boton:hover {
   background: #d9d9d9;
   color: #252422;
 }
@@ -206,8 +199,8 @@ ul li a {
 .local {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 450px;
-  width: 350px;
+  width: 450px;
+  height: 350px;
   background-image: url("../images/local.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -357,6 +350,12 @@ ul li a {
   50% {
     opacity: 1;
   }
+}
+.cont {
+  text-align: center;
+  border: 2px solid #1e1e1e;
+  border-radius: 25px;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

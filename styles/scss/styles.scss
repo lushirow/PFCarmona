@@ -8,6 +8,11 @@ body {
   background: #d9d9d9;
 }
 
+@mixin sizes($ancho,$alto){
+  width: $ancho;
+  height: $alto;
+}
+
 .producto__contenedor {
   width: 100%;
   display: flex;
@@ -121,77 +126,67 @@ ul li a {
 }
 
 .producto {
-  margin: 64px;
-  width: 300px;
-  height: 513px;
-}
-
-.producto__imagen {
-  width: 300px;
-  height: 300px;
-  border-radius: 8px;
-  padding: 0;
-  margin: 0;
-  margin-top: 20px;
-}
-
-.producto__nombre {
-  font-family: 'Kelly Slab', cursive;
-  font-style: normal;
-  font-size: 32px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.producto__nombreDesc {
-  font-family: 'Kelly Slab', cursive;
-  font-style: normal;
-  font-size: 32px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: darkgreen;
-}
-
-.producto__precio {
-  font-family: 'Kelly Slab', cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  text-align: center;
-  margin: 0;
-  margin-top: 5px;
-}
-
-.producto__precioDesc {
-  font-family: 'Kelly Slab', cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  color: darkgreen;
-  text-align: center;
-  margin: 0;
-  margin-top: 5px;
-}
-
-.producto__boton {
-  background: #252422;
-  border: 2px solid #1e1e1e;
-  border-radius: 25px;
-  width: 150px;
-  height: 60px;
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  color: #d9d9d9;
-  text-align: center;
-  margin-top: 15px;
-
-  &:hover {
-    background: #d9d9d9;
-    color: #252422;
+  @include sizes(300px, 513px);
+  .producto__imagen {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .producto__nombre {
+    font-family: 'Kelly Slab', cursive;
+    font-style: normal;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .producto__nombreDesc {
+    font-family: 'Kelly Slab', cursive;
+    font-style: normal;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: darkgreen;
+  }
+  .producto__precio {
+    font-family: 'Kelly Slab', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+  }
+  .producto__precioDesc {
+    font-family: 'Kelly Slab', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: darkgreen;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+  }
+  .producto__boton {
+    background: #252422;
+    border: 2px solid #1e1e1e;
+    border-radius: 25px;
+    @include sizes(150px, 60px);
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #d9d9d9;
+    text-align: center;
+    margin-top: 15px;
+    &:hover {
+      background: #d9d9d9;
+      color: #252422;
+    }
   }
 }
 
@@ -201,10 +196,8 @@ ul li a {
 }
 
 .social {
-  width: 300px;
-  height: 150px;
-
-  a {
+  @include sizes(300px, 150px);
+a {
     font-size: 25px;
   }
 }
@@ -217,8 +210,7 @@ ul li a {
 .local {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 450px;
-  width: 350px;
+  @include sizes(450px, 350px);
   background-image: url("../images/local.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -283,8 +275,7 @@ ul li a {
 
 .textArea {
   border-radius: 4px;
-  width: 400px;
-  height: 130px;
+  @include sizes(400px, 130px);
   font-size: 25px;
   margin-bottom: 25px;
   padding-left: 10px;
@@ -306,8 +297,8 @@ ul li a {
 }
 
 .cProducto {
-  width: 80%;
-  height: 650px;
+  @include sizes(80%, 650px);
+
   background-color: white;
   border: 2px solid #1e1e1e;
   border-radius: 20px;
@@ -371,4 +362,11 @@ ul li a {
   50% {
     opacity: 1;
   }
+}
+
+.cont{
+  text-align: center;
+  border: 2px solid #1e1e1e;
+    border-radius: 25px;
+  margin-top: 30px;
 }
